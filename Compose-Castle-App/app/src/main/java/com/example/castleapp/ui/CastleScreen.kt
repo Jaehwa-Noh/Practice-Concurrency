@@ -20,8 +20,6 @@ import androidx.compose.ui.unit.dp
 import androidx.lifecycle.viewmodel.compose.viewModel
 import com.example.castleapp.model.whereAreYou
 import com.example.castleapp.ui.theme.CastleAppTheme
-import kotlinx.coroutines.coroutineScope
-import kotlinx.coroutines.launch
 
 @Composable
 fun CastleScreen(
