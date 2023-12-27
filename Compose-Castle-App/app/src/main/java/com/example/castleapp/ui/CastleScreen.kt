@@ -4,18 +4,24 @@ import androidx.compose.foundation.layout.Arrangement
 import androidx.compose.foundation.layout.Column
 import androidx.compose.foundation.layout.Row
 import androidx.compose.foundation.layout.fillMaxWidth
+import androidx.compose.foundation.layout.padding
 import androidx.compose.material3.Button
 import androidx.compose.material3.LinearProgressIndicator
 import androidx.compose.material3.MaterialTheme
 import androidx.compose.material3.Text
 import androidx.compose.runtime.Composable
+import androidx.compose.runtime.LaunchedEffect
 import androidx.compose.runtime.collectAsState
 import androidx.compose.runtime.getValue
 import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.tooling.preview.Preview
+import androidx.compose.ui.unit.dp
 import androidx.lifecycle.viewmodel.compose.viewModel
+import com.example.castleapp.model.whereAreYou
 import com.example.castleapp.ui.theme.CastleAppTheme
+import kotlinx.coroutines.coroutineScope
+import kotlinx.coroutines.launch
 
 @Composable
 fun CastleScreen(
@@ -23,6 +29,16 @@ fun CastleScreen(
 ) {
     val castleViewModel: CastleViewModel = viewModel()
     val castleUiState by castleViewModel.uiState.collectAsState()
+
+
+    if (castleUiState.isCalled) {
+        LaunchedEffect(
+            castleUiState.warriors
+        ) {
+            castleViewModel.moveToCastleWarriors()
+            castleViewModel.pauseWarriors()
+        }
+    }
 
     Column(
         verticalArrangement = Arrangement.Center,
@@ -33,11 +49,14 @@ fun CastleScreen(
             "Great Castle",
             style = MaterialTheme.typography.displaySmall
         )
+
         CastleButtonAndWarriorLocation(
             onCallClick = { castleViewModel.callWarriors() },
             onPauseClick = { castleViewModel.pauseWarriors() },
             onReturnClick = { castleViewModel.returnWarriors() },
-            isCalled = castleUiState.isCalled
+            isCalled = castleUiState.isCalled,
+            knightLocation = castleUiState.warriors[0].whereAreYou,
+            cavalryLocation = castleUiState.warriors[1].whereAreYou
         )
     }
 }
@@ -48,7 +67,9 @@ fun CastleButtonAndWarriorLocation(
     onCallClick: () -> Unit,
     onPauseClick: () -> Unit,
     onReturnClick: () -> Unit,
-    isCalled: Boolean
+    isCalled: Boolean,
+    knightLocation: Float,
+    cavalryLocation: Float
 ) {
     Column(
         horizontalAlignment = Alignment.CenterHorizontally,
@@ -56,7 +77,8 @@ fun CastleButtonAndWarriorLocation(
     ) {
         Row(
             horizontalArrangement = Arrangement.Center,
-            verticalAlignment = Alignment.CenterVertically
+            verticalAlignment = Alignment.CenterVertically,
+            modifier = Modifier.padding(horizontal = 8.dp)
         ) {
             Text(
                 "Knight",
@@ -64,12 +86,15 @@ fun CastleButtonAndWarriorLocation(
             )
             LinearProgressIndicator(
                 modifier = Modifier.weight(3f),
-                progress = 0.5f
+                progress = knightLocation
             )
         }
         Row(
             horizontalArrangement = Arrangement.Center,
-            verticalAlignment = Alignment.CenterVertically
+            verticalAlignment = Alignment.CenterVertically,
+            modifier = Modifier.padding(
+                horizontal = 8.dp
+            )
         ) {
             Text(
                 "Cavalry",
@@ -77,7 +102,7 @@ fun CastleButtonAndWarriorLocation(
             )
             LinearProgressIndicator(
                 modifier = Modifier.weight(3f),
-                progress = 0.5f
+                progress = cavalryLocation
             )
         }
         CallAndReturnAndPauseButtons(
@@ -104,9 +129,9 @@ fun CallAndReturnAndPauseButtons(
     ) {
         Button(onClick = {
             if (isCalled) {
-                onCallClick()
-            } else {
                 onPauseClick()
+            } else {
+                onCallClick()
             }
         }) {
             if (isCalled) {
