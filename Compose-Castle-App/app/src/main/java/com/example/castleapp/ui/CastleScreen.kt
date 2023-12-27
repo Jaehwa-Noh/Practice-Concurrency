@@ -3,6 +3,7 @@ package com.example.castleapp.ui
 import androidx.compose.foundation.layout.Arrangement
 import androidx.compose.foundation.layout.Column
 import androidx.compose.foundation.layout.Row
+import androidx.compose.foundation.layout.fillMaxWidth
 import androidx.compose.material3.Button
 import androidx.compose.material3.LinearProgressIndicator
 import androidx.compose.material3.MaterialTheme
@@ -88,7 +89,11 @@ fun CallAndReturnAndPauseButtons(
     onReturnClick: () -> Unit,
     isCalled: Boolean
 ) {
-    Row(modifier = modifier) {
+    Row(
+        modifier = modifier
+            .fillMaxWidth(),
+        horizontalArrangement = Arrangement.SpaceEvenly
+    ) {
         Button(onClick = {
             if (isCalled) {
                 onCallClick()
@@ -96,7 +101,11 @@ fun CallAndReturnAndPauseButtons(
                 onPauseClick()
             }
         }) {
-            Text("Call")
+            if (isCalled) {
+                Text("Pause")
+            } else {
+                Text("Call")
+            }
         }
         Button(onClick = onReturnClick) {
             Text("Return")
