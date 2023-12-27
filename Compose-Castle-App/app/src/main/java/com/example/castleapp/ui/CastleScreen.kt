@@ -9,15 +9,21 @@ import androidx.compose.material3.LinearProgressIndicator
 import androidx.compose.material3.MaterialTheme
 import androidx.compose.material3.Text
 import androidx.compose.runtime.Composable
+import androidx.compose.runtime.collectAsState
+import androidx.compose.runtime.getValue
 import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.tooling.preview.Preview
+import androidx.lifecycle.viewmodel.compose.viewModel
 import com.example.castleapp.ui.theme.CastleAppTheme
 
 @Composable
 fun CastleScreen(
     modifier: Modifier = Modifier
 ) {
+    val castleViewModel: CastleViewModel = viewModel()
+    val castleUiState by castleViewModel.uiState.collectAsState()
+
     Column(
         verticalArrangement = Arrangement.Center,
         horizontalAlignment = Alignment.CenterHorizontally,
@@ -28,9 +34,10 @@ fun CastleScreen(
             style = MaterialTheme.typography.displaySmall
         )
         CastleButtonAndWarriorLocation(
-            onCallClick = { },
-            onPauseClick = { },
-            onReturnClick = { }
+            onCallClick = { castleViewModel.callWarriors() },
+            onPauseClick = { castleViewModel.pauseWarriors() },
+            onReturnClick = { castleViewModel.returnWarriors() },
+            isCalled = castleUiState.isCalled
         )
     }
 }
@@ -40,7 +47,8 @@ fun CastleButtonAndWarriorLocation(
     modifier: Modifier = Modifier,
     onCallClick: () -> Unit,
     onPauseClick: () -> Unit,
-    onReturnClick: () -> Unit
+    onReturnClick: () -> Unit,
+    isCalled: Boolean
 ) {
     Column(
         horizontalAlignment = Alignment.CenterHorizontally,
@@ -76,7 +84,7 @@ fun CastleButtonAndWarriorLocation(
             onCallClick = onCallClick,
             onPauseClick = onPauseClick,
             onReturnClick = onReturnClick,
-            isCalled = false
+            isCalled = isCalled
         )
     }
 }
