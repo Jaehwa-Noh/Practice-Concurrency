@@ -17,9 +17,9 @@ import com.example.castleapp.ui.theme.CastleAppTheme
 fun CastleScreen(
     modifier: Modifier = Modifier
 ) {
-    Row(
-        horizontalArrangement = Arrangement.Center,
-        verticalAlignment = Alignment.CenterVertically,
+    Column(
+        verticalArrangement = Arrangement.Center,
+        horizontalAlignment = Alignment.CenterHorizontally,
         modifier = modifier
     ) {
         Text(
@@ -41,18 +41,33 @@ fun CastleButtonAndWarriorLocation(
     onPauseClick: () -> Unit,
     onReturnClick: () -> Unit
 ) {
-    Column(modifier = modifier) {
-        Row {
-            Text("Knight")
+    Column(
+        horizontalAlignment = Alignment.CenterHorizontally,
+        modifier = modifier
+    ) {
+        Row(
+            horizontalArrangement = Arrangement.Center,
+            verticalAlignment = Alignment.CenterVertically
+        ) {
+            Text(
+                "Knight",
+                modifier = Modifier.weight(1f)
+            )
             LinearProgressIndicator(
-                modifier = Modifier.weight(1f),
+                modifier = Modifier.weight(3f),
                 progress = 0.5f
             )
         }
-        Row {
-            Text("Cavalry")
+        Row(
+            horizontalArrangement = Arrangement.Center,
+            verticalAlignment = Alignment.CenterVertically
+        ) {
+            Text(
+                "Cavalry",
+                modifier = Modifier.weight(1f)
+            )
             LinearProgressIndicator(
-                modifier = Modifier.weight(1f),
+                modifier = Modifier.weight(3f),
                 progress = 0.5f
             )
         }
