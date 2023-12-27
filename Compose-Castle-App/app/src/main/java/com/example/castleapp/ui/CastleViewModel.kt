@@ -1,6 +1,7 @@
 package com.example.castleapp.ui
 
 import androidx.lifecycle.ViewModel
+import com.example.castleapp.data.WarriorRepository
 import com.example.castleapp.model.Warrior
 import kotlinx.coroutines.flow.MutableStateFlow
 import kotlinx.coroutines.flow.StateFlow
@@ -11,6 +12,14 @@ class CastleViewModel : ViewModel() {
     private val _uiState = MutableStateFlow(CastleUiState())
     val uiState: StateFlow<CastleUiState> = _uiState.asStateFlow()
 
+    init {
+        _uiState.update { currentState ->
+            currentState.copy(
+                warriors = WarriorRepository.getCastleWarriors
+            )
+        }
+    }
+
     fun callWarriors() {
         _uiState.update { currentState ->
             currentState.copy(
@@ -20,6 +29,14 @@ class CastleViewModel : ViewModel() {
     }
 
     fun returnWarriors() {
+        _uiState.update { currentState ->
+            currentState.copy(
+                isCalled = false
+            )
+        }
+    }
+
+    fun pauseWarriors() {
         _uiState.update { currentState ->
             currentState.copy(
                 isCalled = false
