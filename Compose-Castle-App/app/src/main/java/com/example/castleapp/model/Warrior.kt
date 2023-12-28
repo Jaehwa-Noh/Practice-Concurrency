@@ -13,8 +13,8 @@ abstract class Warrior {
     abstract fun returnToHome()
 }
 
-class Knight : Warrior() {
-    override val delayTime: Long = 500
+class Knight(override val delayTime: Long) : Warrior() {
+
     override suspend fun moveToCastle() {
 
         while (location in 0f..99f) {
@@ -28,8 +28,7 @@ class Knight : Warrior() {
     }
 }
 
-class Cavalry : Warrior() {
-    override val delayTime: Long = 300
+class Cavalry(override val delayTime: Long) : Warrior() {
     override suspend fun moveToCastle() {
         while (location in 0f..99f) {
             delay(delayTime)
