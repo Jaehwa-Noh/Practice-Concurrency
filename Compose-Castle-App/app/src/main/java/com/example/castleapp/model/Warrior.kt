@@ -6,14 +6,13 @@ import androidx.compose.runtime.setValue
 import kotlinx.coroutines.delay
 
 abstract class Warrior {
-    abstract var location: Float
+    var location by mutableFloatStateOf(0f)
 
     abstract suspend fun moveToCastle()
     abstract fun returnToHome()
 }
 
 class Knight : Warrior() {
-    override var location by mutableFloatStateOf(0f)
     override suspend fun moveToCastle() {
 
         while (location in 0f..99f) {
@@ -28,7 +27,6 @@ class Knight : Warrior() {
 }
 
 class Cavalry : Warrior() {
-    override var location by mutableFloatStateOf(0f)
     override suspend fun moveToCastle() {
         while (location in 0f..99f) {
             delay(300)
