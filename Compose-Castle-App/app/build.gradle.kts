@@ -51,6 +51,8 @@ android {
 
 dependencies {
 
+    testImplementation("org.jetbrains.kotlinx:kotlinx-coroutines-test:1.7.3")
+
     implementation("androidx.lifecycle:lifecycle-viewmodel-compose:2.6.2")
 
     implementation("androidx.core:core-ktx:1.12.0")
