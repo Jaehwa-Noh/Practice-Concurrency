@@ -43,7 +43,7 @@ class CastleScreenTest {
     }
 
     @Test
-    fun castleScreen_CallClickAndClickReturnTwice_CallDisplaySuccess() {
+    fun castleScreen_CallClickAndClickReturnTwice_CallDisplayEdge() {
         repeat(2) {
             val callButton = composeTestRule.onNodeWithText("Call")
             callButton.performClick()
