@@ -7,16 +7,18 @@ import kotlinx.coroutines.delay
 
 abstract class Warrior {
     var location by mutableFloatStateOf(0f)
+    abstract val delayTime: Long
 
     abstract suspend fun moveToCastle()
     abstract fun returnToHome()
 }
 
 class Knight : Warrior() {
+    override val delayTime: Long = 500
     override suspend fun moveToCastle() {
 
         while (location in 0f..99f) {
-            delay(500)
+            delay(delayTime)
             location += 3
         }
     }
@@ -27,9 +29,10 @@ class Knight : Warrior() {
 }
 
 class Cavalry : Warrior() {
+    override val delayTime: Long = 300
     override suspend fun moveToCastle() {
         while (location in 0f..99f) {
-            delay(300)
+            delay(delayTime)
             location += 5
         }
     }
