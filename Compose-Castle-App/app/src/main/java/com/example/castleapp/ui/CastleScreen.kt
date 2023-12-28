@@ -28,7 +28,6 @@ fun CastleScreen(
     val castleViewModel: CastleViewModel = viewModel()
     val castleUiState by castleViewModel.uiState.collectAsState()
 
-
     if (castleUiState.isCalled) {
         LaunchedEffect(
             castleUiState.warriors
@@ -83,7 +82,8 @@ fun CastleButtonAndWarriorLocation(
                 modifier = Modifier.weight(1f)
             )
             LinearProgressIndicator(
-                modifier = Modifier.weight(3f),
+                modifier = Modifier
+                    .weight(3f),
                 progress = knightLocation
             )
         }
@@ -99,7 +99,8 @@ fun CastleButtonAndWarriorLocation(
                 modifier = Modifier.weight(1f)
             )
             LinearProgressIndicator(
-                modifier = Modifier.weight(3f),
+                modifier = Modifier
+                    .weight(3f),
                 progress = cavalryLocation
             )
         }
