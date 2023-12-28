@@ -25,6 +25,12 @@ Concurrency sample app. (동시성 예시 앱입니다.)
 This Castle app called knight and cavalry, showing th progessbar where they are. (이 성 앱은 기사와 기병을 부릅니다. 그리고 진행바로 그들이 어디있는지 보여줍니다.)   
 
 
+# My Result (내 결과물)
+## Apps on device (프로젝트 실행 이미지)
+| Compose(컴포즈) | SwiftUI(스위프트유아이) |
+| :---------------: | :---------------: |
+| <img width="300" alt="Compose Concurrency(컴포즈 동시성)" src="https://github.com/Jaehwa-Noh/Practice-Concurrency/assets/48680511/5ad2f679-0c51-43e8-9883-8bff07d22f08"> | |
+
 
 ## Problem Solve (문제 해결)
 ### Compose (컴포즈)
