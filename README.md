@@ -5,7 +5,7 @@ This main branch is the main directory.
 
 there are 2 additional branchs for 1 practice, Compose and SwiftUI.   
    
-• [Compose branch]   
+• [Compose branch](https://github.com/Jaehwa-Noh/Practice-Concurrency/tree/compose-castle-app)   
 • [SwiftUI branch]   
 
 
@@ -16,10 +16,17 @@ there are 2 additional branchs for 1 practice, Compose and SwiftUI.
 
 1개의 연습마다 컴포즈와 스위프트유아이 2개의 추가적인 브랜치가 있습니다.   
    
-• [컴포즈 브랜치]   
+• [컴포즈 브랜치](https://github.com/Jaehwa-Noh/Practice-Concurrency/tree/compose-castle-app)   
 • [스위프트유아이 브랜치]   
 
 
 ## Castle App(성 앱)
 Concurrency sample app. (동시성 예시 앱입니다.)   
 This Castle app called knight and cavalry, showing th progessbar where they are. (이 성 앱은 기사와 기병을 부릅니다. 그리고 진행바로 그들이 어디있는지 보여줍니다.)   
+
+
+
+## Problem Solve (문제 해결)
+### Compose (컴포즈)
+#### LaunchedEffect doesn't work (LaunchedEffect 작동 안함)
+• [LaunchedEffect doesn't work](https://shwoghk14.blogspot.com/2023/12/android-compose-launchedeffect-doesnt.html)
