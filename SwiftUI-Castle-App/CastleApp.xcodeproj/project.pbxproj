@@ -12,6 +12,7 @@
 		CF338F822B3EA691003C2C01 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CF338F812B3EA691003C2C01 /* Assets.xcassets */; };
 		CF338F852B3EA691003C2C01 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CF338F842B3EA691003C2C01 /* Preview Assets.xcassets */; };
 		CF6134022B3EA7E500FB5EE9 /* Warrior.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF6134012B3EA7E500FB5EE9 /* Warrior.swift */; };
+		CF6134042B3EB5A600FB5EE9 /* WarriorExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF6134032B3EB5A600FB5EE9 /* WarriorExtension.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -21,6 +22,7 @@
 		CF338F812B3EA691003C2C01 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		CF338F842B3EA691003C2C01 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		CF6134012B3EA7E500FB5EE9 /* Warrior.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Warrior.swift; sourceTree = "<group>"; };
+		CF6134032B3EB5A600FB5EE9 /* WarriorExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WarriorExtension.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -75,6 +77,7 @@
 			isa = PBXGroup;
 			children = (
 				CF6134012B3EA7E500FB5EE9 /* Warrior.swift */,
+				CF6134032B3EB5A600FB5EE9 /* WarriorExtension.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -156,6 +159,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CF6134042B3EB5A600FB5EE9 /* WarriorExtension.swift in Sources */,
 				CF6134022B3EA7E500FB5EE9 /* Warrior.swift in Sources */,
 				CF338F802B3EA691003C2C01 /* ContentView.swift in Sources */,
 				CF338F7E2B3EA691003C2C01 /* CastleAppApp.swift in Sources */,
