@@ -1,6 +1,8 @@
 package com.example.castleapp
 
+import androidx.compose.ui.test.ExperimentalTestApi
 import androidx.compose.ui.test.assertIsDisplayed
+import androidx.compose.ui.test.hasText
 import androidx.compose.ui.test.junit4.createComposeRule
 import androidx.compose.ui.test.onNodeWithText
 import androidx.compose.ui.test.performClick
@@ -54,5 +56,47 @@ class CastleScreenTest {
         }
     }
 
+    @OptIn(ExperimentalTestApi::class)
+    @Test
+    fun castleScreen_CallClickAndWaitFull_CallButtonShowAgainSuccess() {
 
+        val callButton = composeTestRule.onNodeWithText("Call")
+        callButton.performClick()
+
+        val pauseButton = composeTestRule.onNodeWithText("Pause")
+        pauseButton.assertExists()
+
+        composeTestRule.waitUntilDoesNotExist(
+            hasText("Pause"), 100000
+        )
+
+
+        callButton.assertIsDisplayed()
+        resetProgressBar()
+    }
+
+    @OptIn(ExperimentalTestApi::class)
+    @Test
+    fun castleScreen_CallClickAndPauseAndWaitFull_CallButtonShowAgainEdge() {
+
+        val callButton = composeTestRule.onNodeWithText("Call")
+        callButton.performClick()
+
+        val pauseButton = composeTestRule.onNodeWithText("Pause")
+        pauseButton.performClick()
+
+        callButton.performClick()
+        composeTestRule.waitUntilDoesNotExist(
+            hasText("Pause"), 100000
+        )
+
+        callButton.assertIsDisplayed()
+        resetProgressBar()
+    }
+
+    private fun resetProgressBar() {
+        val returnButton = composeTestRule.onNodeWithText("Return")
+        returnButton.assertIsDisplayed()
+        returnButton.performClick()
+    }
 }

@@ -35,4 +35,7 @@ This Castle app called knight and cavalry, showing th progessbar where they are.
 ## Problem Solve (문제 해결)
 ### Compose (컴포즈)
 #### LaunchedEffect doesn't work (LaunchedEffect 작동 안함)
-• [LaunchedEffect doesn't work](https://shwoghk14.blogspot.com/2023/12/android-compose-launchedeffect-doesnt.html)
+• [LaunchedEffect doesn't work(LaunchedEffect 작동 안됨)](https://shwoghk14.blogspot.com/2023/12/android-compose-launchedeffect-doesnt.html)
+
+#### Asynchronous UI test(비동기 UI 테스트)
+• [Can't test UI test asynchronously(UI 테스트를 비동기로 테스트 불가)](https://shwoghk14.blogspot.com/2023/12/android-compose-asynchronous-ui-test.html)
