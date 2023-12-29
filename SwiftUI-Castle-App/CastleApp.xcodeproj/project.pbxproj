@@ -11,6 +11,7 @@
 		CF338F802B3EA691003C2C01 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF338F7F2B3EA691003C2C01 /* ContentView.swift */; };
 		CF338F822B3EA691003C2C01 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CF338F812B3EA691003C2C01 /* Assets.xcassets */; };
 		CF338F852B3EA691003C2C01 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CF338F842B3EA691003C2C01 /* Preview Assets.xcassets */; };
+		CF6134022B3EA7E500FB5EE9 /* Warrior.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF6134012B3EA7E500FB5EE9 /* Warrior.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -19,6 +20,7 @@
 		CF338F7F2B3EA691003C2C01 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		CF338F812B3EA691003C2C01 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		CF338F842B3EA691003C2C01 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		CF6134012B3EA7E500FB5EE9 /* Warrior.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Warrior.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -51,6 +53,8 @@
 		CF338F7C2B3EA691003C2C01 /* CastleApp */ = {
 			isa = PBXGroup;
 			children = (
+				CF6134002B3EA7CC00FB5EE9 /* Data */,
+				CF6133FF2B3EA7C800FB5EE9 /* Model */,
 				CF338F7D2B3EA691003C2C01 /* CastleAppApp.swift */,
 				CF338F7F2B3EA691003C2C01 /* ContentView.swift */,
 				CF338F812B3EA691003C2C01 /* Assets.xcassets */,
@@ -65,6 +69,21 @@
 				CF338F842B3EA691003C2C01 /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		CF6133FF2B3EA7C800FB5EE9 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				CF6134012B3EA7E500FB5EE9 /* Warrior.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		CF6134002B3EA7CC00FB5EE9 /* Data */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Data;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -137,6 +156,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CF6134022B3EA7E500FB5EE9 /* Warrior.swift in Sources */,
 				CF338F802B3EA691003C2C01 /* ContentView.swift in Sources */,
 				CF338F7E2B3EA691003C2C01 /* CastleAppApp.swift in Sources */,
 			);
