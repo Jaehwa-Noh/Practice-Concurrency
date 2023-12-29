@@ -13,6 +13,7 @@
 		CF338F852B3EA691003C2C01 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CF338F842B3EA691003C2C01 /* Preview Assets.xcassets */; };
 		CF6134022B3EA7E500FB5EE9 /* Warrior.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF6134012B3EA7E500FB5EE9 /* Warrior.swift */; };
 		CF6134042B3EB5A600FB5EE9 /* WarriorExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF6134032B3EB5A600FB5EE9 /* WarriorExtension.swift */; };
+		CF6134062B3EB71300FB5EE9 /* WarriorRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF6134052B3EB71300FB5EE9 /* WarriorRepository.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -23,6 +24,7 @@
 		CF338F842B3EA691003C2C01 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		CF6134012B3EA7E500FB5EE9 /* Warrior.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Warrior.swift; sourceTree = "<group>"; };
 		CF6134032B3EB5A600FB5EE9 /* WarriorExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WarriorExtension.swift; sourceTree = "<group>"; };
+		CF6134052B3EB71300FB5EE9 /* WarriorRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WarriorRepository.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -85,6 +87,7 @@
 		CF6134002B3EA7CC00FB5EE9 /* Data */ = {
 			isa = PBXGroup;
 			children = (
+				CF6134052B3EB71300FB5EE9 /* WarriorRepository.swift */,
 			);
 			path = Data;
 			sourceTree = "<group>";
@@ -161,6 +164,7 @@
 			files = (
 				CF6134042B3EB5A600FB5EE9 /* WarriorExtension.swift in Sources */,
 				CF6134022B3EA7E500FB5EE9 /* Warrior.swift in Sources */,
+				CF6134062B3EB71300FB5EE9 /* WarriorRepository.swift in Sources */,
 				CF338F802B3EA691003C2C01 /* ContentView.swift in Sources */,
 				CF338F7E2B3EA691003C2C01 /* CastleAppApp.swift in Sources */,
 			);
