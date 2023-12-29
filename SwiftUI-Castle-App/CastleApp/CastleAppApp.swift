@@ -11,7 +11,7 @@ import SwiftUI
 struct CastleAppApp: App {
     var body: some Scene {
         WindowGroup {
-            ContentView()
+            CastleScreen()
         }
     }
 }

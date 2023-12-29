@@ -8,7 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		CF338F7E2B3EA691003C2C01 /* CastleAppApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF338F7D2B3EA691003C2C01 /* CastleAppApp.swift */; };
-		CF338F802B3EA691003C2C01 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF338F7F2B3EA691003C2C01 /* ContentView.swift */; };
+		CF338F802B3EA691003C2C01 /* CastleScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF338F7F2B3EA691003C2C01 /* CastleScreen.swift */; };
 		CF338F822B3EA691003C2C01 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CF338F812B3EA691003C2C01 /* Assets.xcassets */; };
 		CF338F852B3EA691003C2C01 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CF338F842B3EA691003C2C01 /* Preview Assets.xcassets */; };
 		CF6134022B3EA7E500FB5EE9 /* Warrior.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF6134012B3EA7E500FB5EE9 /* Warrior.swift */; };
@@ -19,7 +19,7 @@
 /* Begin PBXFileReference section */
 		CF338F7A2B3EA691003C2C01 /* CastleApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CastleApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		CF338F7D2B3EA691003C2C01 /* CastleAppApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CastleAppApp.swift; sourceTree = "<group>"; };
-		CF338F7F2B3EA691003C2C01 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		CF338F7F2B3EA691003C2C01 /* CastleScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CastleScreen.swift; sourceTree = "<group>"; };
 		CF338F812B3EA691003C2C01 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		CF338F842B3EA691003C2C01 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		CF6134012B3EA7E500FB5EE9 /* Warrior.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Warrior.swift; sourceTree = "<group>"; };
@@ -59,8 +59,8 @@
 			children = (
 				CF6134002B3EA7CC00FB5EE9 /* Data */,
 				CF6133FF2B3EA7C800FB5EE9 /* Model */,
+				CF6134072B3EB8B400FB5EE9 /* UI */,
 				CF338F7D2B3EA691003C2C01 /* CastleAppApp.swift */,
-				CF338F7F2B3EA691003C2C01 /* ContentView.swift */,
 				CF338F812B3EA691003C2C01 /* Assets.xcassets */,
 				CF338F832B3EA691003C2C01 /* Preview Content */,
 			);
@@ -90,6 +90,14 @@
 				CF6134052B3EB71300FB5EE9 /* WarriorRepository.swift */,
 			);
 			path = Data;
+			sourceTree = "<group>";
+		};
+		CF6134072B3EB8B400FB5EE9 /* UI */ = {
+			isa = PBXGroup;
+			children = (
+				CF338F7F2B3EA691003C2C01 /* CastleScreen.swift */,
+			);
+			path = UI;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -165,7 +173,7 @@
 				CF6134042B3EB5A600FB5EE9 /* WarriorExtension.swift in Sources */,
 				CF6134022B3EA7E500FB5EE9 /* Warrior.swift in Sources */,
 				CF6134062B3EB71300FB5EE9 /* WarriorRepository.swift in Sources */,
-				CF338F802B3EA691003C2C01 /* ContentView.swift in Sources */,
+				CF338F802B3EA691003C2C01 /* CastleScreen.swift in Sources */,
 				CF338F7E2B3EA691003C2C01 /* CastleAppApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
