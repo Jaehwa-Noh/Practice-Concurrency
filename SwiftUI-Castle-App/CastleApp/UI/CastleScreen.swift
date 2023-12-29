@@ -10,12 +10,43 @@ import SwiftUI
 struct CastleScreen: View {
     var body: some View {
         VStack {
-            Image(systemName: "globe")
-                .imageScale(.large)
-                .foregroundStyle(.tint)
-            Text("Hello, world!")
+            Text("Great Castle")
+                .font(.title)
+            
+            CastleButtonAndWarriorLocation()
+        }
+    }
+}
+
+struct CastleButtonAndWarriorLocation: View {
+    var body: some View {
+        VStack {
+            
+            ProgressView(value: 0.5) {
+                Text("Knight")
+            }
+            Spacer()
+                .frame(height:16)
+            ProgressView(value: 0.5) {
+                Text("Cavalry")
+            }
+            
         }
         .padding()
+    }
+}
+
+struct CallAndReturnAndPauseButtons: View {
+    var body: some View {
+        HStack {
+            Button("Call") {
+                
+            }
+            
+            Button("Return") {
+                
+            }
+        }
     }
 }
 
