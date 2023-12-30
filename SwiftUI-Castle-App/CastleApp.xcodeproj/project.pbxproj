@@ -12,7 +12,18 @@
 		CF338F822B3EA691003C2C01 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CF338F812B3EA691003C2C01 /* Assets.xcassets */; };
 		CF338F852B3EA691003C2C01 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CF338F842B3EA691003C2C01 /* Preview Assets.xcassets */; };
 		CF6134292B3EFDED00FB5EE9 /* WarriorModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF6134282B3EFDED00FB5EE9 /* WarriorModel.swift */; };
+		CFE2B6702B3FCBE00045EB1D /* WarriorModelTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFE2B66F2B3FCBE00045EB1D /* WarriorModelTests.swift */; };
 /* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		CFE2B66A2B3FCBD10045EB1D /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = CF338F722B3EA690003C2C01 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = CF338F792B3EA691003C2C01;
+			remoteInfo = CastleApp;
+		};
+/* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
 		CF338F7A2B3EA691003C2C01 /* CastleApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CastleApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -21,10 +32,19 @@
 		CF338F812B3EA691003C2C01 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		CF338F842B3EA691003C2C01 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		CF6134282B3EFDED00FB5EE9 /* WarriorModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WarriorModel.swift; sourceTree = "<group>"; };
+		CFE2B6662B3FCBD10045EB1D /* CastleAppTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CastleAppTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		CFE2B66F2B3FCBE00045EB1D /* WarriorModelTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WarriorModelTests.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
 		CF338F772B3EA691003C2C01 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CFE2B6632B3FCBD10045EB1D /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -38,6 +58,7 @@
 			isa = PBXGroup;
 			children = (
 				CF338F7C2B3EA691003C2C01 /* CastleApp */,
+				CFE2B6672B3FCBD10045EB1D /* CastleAppTests */,
 				CF338F7B2B3EA691003C2C01 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -46,6 +67,7 @@
 			isa = PBXGroup;
 			children = (
 				CF338F7A2B3EA691003C2C01 /* CastleApp.app */,
+				CFE2B6662B3FCBD10045EB1D /* CastleAppTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -94,6 +116,14 @@
 			path = UI;
 			sourceTree = "<group>";
 		};
+		CFE2B6672B3FCBD10045EB1D /* CastleAppTests */ = {
+			isa = PBXGroup;
+			children = (
+				CFE2B66F2B3FCBE00045EB1D /* WarriorModelTests.swift */,
+			);
+			path = CastleAppTests;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -114,6 +144,24 @@
 			productReference = CF338F7A2B3EA691003C2C01 /* CastleApp.app */;
 			productType = "com.apple.product-type.application";
 		};
+		CFE2B6652B3FCBD10045EB1D /* CastleAppTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = CFE2B66C2B3FCBD10045EB1D /* Build configuration list for PBXNativeTarget "CastleAppTests" */;
+			buildPhases = (
+				CFE2B6622B3FCBD10045EB1D /* Sources */,
+				CFE2B6632B3FCBD10045EB1D /* Frameworks */,
+				CFE2B6642B3FCBD10045EB1D /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				CFE2B66B2B3FCBD10045EB1D /* PBXTargetDependency */,
+			);
+			name = CastleAppTests;
+			productName = CastleAppTests;
+			productReference = CFE2B6662B3FCBD10045EB1D /* CastleAppTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -126,6 +174,10 @@
 				TargetAttributes = {
 					CF338F792B3EA691003C2C01 = {
 						CreatedOnToolsVersion = 15.1;
+					};
+					CFE2B6652B3FCBD10045EB1D = {
+						CreatedOnToolsVersion = 15.1;
+						TestTargetID = CF338F792B3EA691003C2C01;
 					};
 				};
 			};
@@ -143,6 +195,7 @@
 			projectRoot = "";
 			targets = (
 				CF338F792B3EA691003C2C01 /* CastleApp */,
+				CFE2B6652B3FCBD10045EB1D /* CastleAppTests */,
 			);
 		};
 /* End PBXProject section */
@@ -154,6 +207,13 @@
 			files = (
 				CF338F852B3EA691003C2C01 /* Preview Assets.xcassets in Resources */,
 				CF338F822B3EA691003C2C01 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CFE2B6642B3FCBD10045EB1D /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -170,7 +230,23 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		CFE2B6622B3FCBD10045EB1D /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CFE2B6702B3FCBE00045EB1D /* WarriorModelTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		CFE2B66B2B3FCBD10045EB1D /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = CF338F792B3EA691003C2C01 /* CastleApp */;
+			targetProxy = CFE2B66A2B3FCBD10045EB1D /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
 		CF338F862B3EA691003C2C01 /* Debug */ = {
@@ -352,6 +428,42 @@
 			};
 			name = Release;
 		};
+		CFE2B66D2B3FCBD10045EB1D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 6H64278R9T;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = example.sample.CastleAppTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/CastleApp.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/CastleApp";
+			};
+			name = Debug;
+		};
+		CFE2B66E2B3FCBD10045EB1D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 6H64278R9T;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = example.sample.CastleAppTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/CastleApp.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/CastleApp";
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -369,6 +481,15 @@
 			buildConfigurations = (
 				CF338F892B3EA691003C2C01 /* Debug */,
 				CF338F8A2B3EA691003C2C01 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		CFE2B66C2B3FCBD10045EB1D /* Build configuration list for PBXNativeTarget "CastleAppTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CFE2B66D2B3FCBD10045EB1D /* Debug */,
+				CFE2B66E2B3FCBD10045EB1D /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
