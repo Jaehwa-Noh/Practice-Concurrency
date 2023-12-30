@@ -20,20 +20,20 @@ struct CastleScreen: View {
 
 struct CastleButtonAndWarriorLocation: View {
     //    @StateObject private var castleViewModel = CastleViewModel()
-    @StateObject private var knightModel = Knight(delayTime: 500)
-    @StateObject private var cavalryModel = Cavalry(delayTime: 300)
+    @StateObject private var knightModel = Warrior(delayTime: 500, name: "Knight", moveDistance: 3)
+    @StateObject private var cavalryModel = Warrior(delayTime: 300, name: "Cavalry", moveDistance: 5)
     @State var isCalled = false
     
     var body: some View {
         VStack {
             
             ProgressView(value: knightModel.whereAreYou) {
-                Text("Knight")
+                Text("\(knightModel.name)")
             }
             Spacer()
                 .frame(height:16)
             ProgressView(value: cavalryModel.whereAreYou) {
-                Text("Cavalry")
+                Text("\(cavalryModel.name)")
             }
             
             CallAndReturnAndPauseButtons(isCalled: $isCalled, knightModel: knightModel, cavalryModel: cavalryModel)
@@ -47,8 +47,8 @@ struct CastleButtonAndWarriorLocation: View {
 struct CallAndReturnAndPauseButtons: View {
     @Binding var isCalled: Bool
     //    let castleViewModel: CastleViewModel
-    let knightModel: Knight
-    let cavalryModel: Cavalry
+    let knightModel: Warrior
+    let cavalryModel: Warrior
     @State var callJob: Task<Void, Never>?
     var body: some View {
         HStack {
