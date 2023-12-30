@@ -43,3 +43,6 @@ This Castle app called knight and cavalry, showing th progessbar where they are.
 ### SwiftUI (스위프트유아이)
 #### Asynchronous unit test with timeout (비동기 유닛 테스트 시간 설정)
 • [Can't test Unit test to pause specific time(유닛 테스트를 특정한 시간에 멈출수가 없음)](https://shwoghk14.blogspot.com/2023/12/ios-swiftui-asynchronous-unit-test-with.html)
+
+#### Asynchronous UI test(비동기 UI 테스트)
+• [Can't test UI test asynchronously(UI 테스트를 비동기로 테스트 불가)](https://shwoghk14.blogspot.com/2023/12/ios-swiftui-asynchronous-ui-test.html)
