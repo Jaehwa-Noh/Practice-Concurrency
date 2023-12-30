@@ -6,7 +6,7 @@ This main branch is the main directory.
 there are 2 additional branchs for 1 practice, Compose and SwiftUI.   
    
 • [Compose branch](https://github.com/Jaehwa-Noh/Practice-Concurrency/tree/compose-castle-app)   
-• [SwiftUI branch]   
+• [SwiftUI branch](https://github.com/Jaehwa-Noh/Practice-Concurrency/tree/swiftui-castle-app)   
 
 
 ---
@@ -17,7 +17,7 @@ there are 2 additional branchs for 1 practice, Compose and SwiftUI.
 1개의 연습마다 컴포즈와 스위프트유아이 2개의 추가적인 브랜치가 있습니다.   
    
 • [컴포즈 브랜치](https://github.com/Jaehwa-Noh/Practice-Concurrency/tree/compose-castle-app)   
-• [스위프트유아이 브랜치]   
+• [스위프트유아이 브랜치](https://github.com/Jaehwa-Noh/Practice-Concurrency/tree/swiftui-castle-app)   
 
 
 ## Castle App(성 앱)
@@ -29,7 +29,7 @@ This Castle app called knight and cavalry, showing th progessbar where they are.
 ## Apps on device (프로젝트 실행 이미지)
 | Compose(컴포즈) | SwiftUI(스위프트유아이) |
 | :---------------: | :---------------: |
-| <img width="300" alt="Compose Concurrency(컴포즈 동시성)" src="https://github.com/Jaehwa-Noh/Practice-Concurrency/assets/48680511/5ad2f679-0c51-43e8-9883-8bff07d22f08"> | |
+| <img width="300" alt="Compose Concurrency(컴포즈 동시성)" src="https://github.com/Jaehwa-Noh/Practice-Concurrency/assets/48680511/5ad2f679-0c51-43e8-9883-8bff07d22f08"> | <img width="300" alt="SwiftUI Concurrency(스위프트유아이 동시성)" src="https://github.com/Jaehwa-Noh/Practice-Concurrency/assets/48680511/dc30e8a3-0790-46e0-8db1-e1852d60731c"> |
 
 
 ## Problem Solve (문제 해결)
@@ -39,3 +39,10 @@ This Castle app called knight and cavalry, showing th progessbar where they are.
 
 #### Asynchronous UI test(비동기 UI 테스트)
 • [Can't test UI test asynchronously(UI 테스트를 비동기로 테스트 불가)](https://shwoghk14.blogspot.com/2023/12/android-compose-asynchronous-ui-test.html)
+
+### SwiftUI (스위프트유아이)
+#### Asynchronous unit test with timeout (비동기 유닛 테스트 시간 설정)
+• [Can't test Unit test to pause specific time(유닛 테스트를 특정한 시간에 멈출수가 없음)](https://shwoghk14.blogspot.com/2023/12/ios-swiftui-asynchronous-unit-test-with.html)
+
+#### Asynchronous UI test(비동기 UI 테스트)
+• [Can't test UI test asynchronously(UI 테스트를 비동기로 테스트 불가)](https://shwoghk14.blogspot.com/2023/12/ios-swiftui-asynchronous-ui-test.html)
