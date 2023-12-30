@@ -11,7 +11,7 @@
 		CF338F802B3EA691003C2C01 /* CastleScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF338F7F2B3EA691003C2C01 /* CastleScreen.swift */; };
 		CF338F822B3EA691003C2C01 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CF338F812B3EA691003C2C01 /* Assets.xcassets */; };
 		CF338F852B3EA691003C2C01 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CF338F842B3EA691003C2C01 /* Preview Assets.xcassets */; };
-		CF6134292B3EFDED00FB5EE9 /* KnightModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF6134282B3EFDED00FB5EE9 /* KnightModel.swift */; };
+		CF6134292B3EFDED00FB5EE9 /* WarriorModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF6134282B3EFDED00FB5EE9 /* WarriorModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -20,7 +20,7 @@
 		CF338F7F2B3EA691003C2C01 /* CastleScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CastleScreen.swift; sourceTree = "<group>"; };
 		CF338F812B3EA691003C2C01 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		CF338F842B3EA691003C2C01 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
-		CF6134282B3EFDED00FB5EE9 /* KnightModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KnightModel.swift; sourceTree = "<group>"; };
+		CF6134282B3EFDED00FB5EE9 /* WarriorModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WarriorModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -88,7 +88,7 @@
 		CF6134072B3EB8B400FB5EE9 /* UI */ = {
 			isa = PBXGroup;
 			children = (
-				CF6134282B3EFDED00FB5EE9 /* KnightModel.swift */,
+				CF6134282B3EFDED00FB5EE9 /* WarriorModel.swift */,
 				CF338F7F2B3EA691003C2C01 /* CastleScreen.swift */,
 			);
 			path = UI;
@@ -165,7 +165,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				CF338F802B3EA691003C2C01 /* CastleScreen.swift in Sources */,
-				CF6134292B3EFDED00FB5EE9 /* KnightModel.swift in Sources */,
+				CF6134292B3EFDED00FB5EE9 /* WarriorModel.swift in Sources */,
 				CF338F7E2B3EA691003C2C01 /* CastleAppApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
