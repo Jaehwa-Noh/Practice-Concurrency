@@ -29,7 +29,7 @@ This Castle app called knight and cavalry, showing th progessbar where they are.
 ## Apps on device (프로젝트 실행 이미지)
 | Compose(컴포즈) | SwiftUI(스위프트유아이) |
 | :---------------: | :---------------: |
-| <img width="300" alt="Compose Concurrency(컴포즈 동시성)" src="https://github.com/Jaehwa-Noh/Practice-Concurrency/assets/48680511/5ad2f679-0c51-43e8-9883-8bff07d22f08"> | |
+| <img width="300" alt="Compose Concurrency(컴포즈 동시성)" src="https://github.com/Jaehwa-Noh/Practice-Concurrency/assets/48680511/5ad2f679-0c51-43e8-9883-8bff07d22f08"> | <img width="300" alt="SwiftUI Concurrency(스위프트유아이 동시성)" src="https://github.com/Jaehwa-Noh/Practice-Concurrency/assets/48680511/dc30e8a3-0790-46e0-8db1-e1852d60731c"> |
 
 
 ## Problem Solve (문제 해결)
