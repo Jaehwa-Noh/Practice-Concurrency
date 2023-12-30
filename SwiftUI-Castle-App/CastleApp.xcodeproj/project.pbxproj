@@ -1,0 +1,613 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		CF338F7E2B3EA691003C2C01 /* CastleAppApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF338F7D2B3EA691003C2C01 /* CastleAppApp.swift */; };
+		CF338F802B3EA691003C2C01 /* CastleScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF338F7F2B3EA691003C2C01 /* CastleScreen.swift */; };
+		CF338F822B3EA691003C2C01 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CF338F812B3EA691003C2C01 /* Assets.xcassets */; };
+		CF338F852B3EA691003C2C01 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CF338F842B3EA691003C2C01 /* Preview Assets.xcassets */; };
+		CF6134292B3EFDED00FB5EE9 /* WarriorModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF6134282B3EFDED00FB5EE9 /* WarriorModel.swift */; };
+		CFE2B6702B3FCBE00045EB1D /* WarriorModelTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFE2B66F2B3FCBE00045EB1D /* WarriorModelTests.swift */; };
+		CFE2B6812B3FED3F0045EB1D /* CastleScreenTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFE2B6802B3FED3F0045EB1D /* CastleScreenTests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		CFE2B66A2B3FCBD10045EB1D /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = CF338F722B3EA690003C2C01 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = CF338F792B3EA691003C2C01;
+			remoteInfo = CastleApp;
+		};
+		CFE2B67B2B3FED1F0045EB1D /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = CF338F722B3EA690003C2C01 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = CF338F792B3EA691003C2C01;
+			remoteInfo = CastleApp;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		CF338F7A2B3EA691003C2C01 /* CastleApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CastleApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		CF338F7D2B3EA691003C2C01 /* CastleAppApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CastleAppApp.swift; sourceTree = "<group>"; };
+		CF338F7F2B3EA691003C2C01 /* CastleScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CastleScreen.swift; sourceTree = "<group>"; };
+		CF338F812B3EA691003C2C01 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		CF338F842B3EA691003C2C01 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		CF6134282B3EFDED00FB5EE9 /* WarriorModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WarriorModel.swift; sourceTree = "<group>"; };
+		CFE2B6662B3FCBD10045EB1D /* CastleAppTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CastleAppTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		CFE2B66F2B3FCBE00045EB1D /* WarriorModelTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WarriorModelTests.swift; sourceTree = "<group>"; };
+		CFE2B6752B3FED1F0045EB1D /* CastleAppUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CastleAppUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		CFE2B6802B3FED3F0045EB1D /* CastleScreenTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CastleScreenTests.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		CF338F772B3EA691003C2C01 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CFE2B6632B3FCBD10045EB1D /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CFE2B6722B3FED1F0045EB1D /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		CF338F712B3EA690003C2C01 = {
+			isa = PBXGroup;
+			children = (
+				CF338F7C2B3EA691003C2C01 /* CastleApp */,
+				CFE2B6672B3FCBD10045EB1D /* CastleAppTests */,
+				CFE2B6762B3FED1F0045EB1D /* CastleAppUITests */,
+				CF338F7B2B3EA691003C2C01 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		CF338F7B2B3EA691003C2C01 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				CF338F7A2B3EA691003C2C01 /* CastleApp.app */,
+				CFE2B6662B3FCBD10045EB1D /* CastleAppTests.xctest */,
+				CFE2B6752B3FED1F0045EB1D /* CastleAppUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		CF338F7C2B3EA691003C2C01 /* CastleApp */ = {
+			isa = PBXGroup;
+			children = (
+				CF6134002B3EA7CC00FB5EE9 /* Data */,
+				CF6133FF2B3EA7C800FB5EE9 /* Model */,
+				CF6134072B3EB8B400FB5EE9 /* UI */,
+				CF338F7D2B3EA691003C2C01 /* CastleAppApp.swift */,
+				CF338F812B3EA691003C2C01 /* Assets.xcassets */,
+				CF338F832B3EA691003C2C01 /* Preview Content */,
+			);
+			path = CastleApp;
+			sourceTree = "<group>";
+		};
+		CF338F832B3EA691003C2C01 /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				CF338F842B3EA691003C2C01 /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		CF6133FF2B3EA7C800FB5EE9 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		CF6134002B3EA7CC00FB5EE9 /* Data */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Data;
+			sourceTree = "<group>";
+		};
+		CF6134072B3EB8B400FB5EE9 /* UI */ = {
+			isa = PBXGroup;
+			children = (
+				CF6134282B3EFDED00FB5EE9 /* WarriorModel.swift */,
+				CF338F7F2B3EA691003C2C01 /* CastleScreen.swift */,
+			);
+			path = UI;
+			sourceTree = "<group>";
+		};
+		CFE2B6672B3FCBD10045EB1D /* CastleAppTests */ = {
+			isa = PBXGroup;
+			children = (
+				CFE2B66F2B3FCBE00045EB1D /* WarriorModelTests.swift */,
+			);
+			path = CastleAppTests;
+			sourceTree = "<group>";
+		};
+		CFE2B6762B3FED1F0045EB1D /* CastleAppUITests */ = {
+			isa = PBXGroup;
+			children = (
+				CFE2B6802B3FED3F0045EB1D /* CastleScreenTests.swift */,
+			);
+			path = CastleAppUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		CF338F792B3EA691003C2C01 /* CastleApp */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = CF338F882B3EA691003C2C01 /* Build configuration list for PBXNativeTarget "CastleApp" */;
+			buildPhases = (
+				CF338F762B3EA691003C2C01 /* Sources */,
+				CF338F772B3EA691003C2C01 /* Frameworks */,
+				CF338F782B3EA691003C2C01 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = CastleApp;
+			productName = CastleApp;
+			productReference = CF338F7A2B3EA691003C2C01 /* CastleApp.app */;
+			productType = "com.apple.product-type.application";
+		};
+		CFE2B6652B3FCBD10045EB1D /* CastleAppTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = CFE2B66C2B3FCBD10045EB1D /* Build configuration list for PBXNativeTarget "CastleAppTests" */;
+			buildPhases = (
+				CFE2B6622B3FCBD10045EB1D /* Sources */,
+				CFE2B6632B3FCBD10045EB1D /* Frameworks */,
+				CFE2B6642B3FCBD10045EB1D /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				CFE2B66B2B3FCBD10045EB1D /* PBXTargetDependency */,
+			);
+			name = CastleAppTests;
+			productName = CastleAppTests;
+			productReference = CFE2B6662B3FCBD10045EB1D /* CastleAppTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		CFE2B6742B3FED1F0045EB1D /* CastleAppUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = CFE2B67D2B3FED1F0045EB1D /* Build configuration list for PBXNativeTarget "CastleAppUITests" */;
+			buildPhases = (
+				CFE2B6712B3FED1F0045EB1D /* Sources */,
+				CFE2B6722B3FED1F0045EB1D /* Frameworks */,
+				CFE2B6732B3FED1F0045EB1D /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				CFE2B67C2B3FED1F0045EB1D /* PBXTargetDependency */,
+			);
+			name = CastleAppUITests;
+			productName = CastleAppUITests;
+			productReference = CFE2B6752B3FED1F0045EB1D /* CastleAppUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		CF338F722B3EA690003C2C01 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1510;
+				LastUpgradeCheck = 1510;
+				TargetAttributes = {
+					CF338F792B3EA691003C2C01 = {
+						CreatedOnToolsVersion = 15.1;
+					};
+					CFE2B6652B3FCBD10045EB1D = {
+						CreatedOnToolsVersion = 15.1;
+						TestTargetID = CF338F792B3EA691003C2C01;
+					};
+					CFE2B6742B3FED1F0045EB1D = {
+						CreatedOnToolsVersion = 15.1;
+						TestTargetID = CF338F792B3EA691003C2C01;
+					};
+				};
+			};
+			buildConfigurationList = CF338F752B3EA690003C2C01 /* Build configuration list for PBXProject "CastleApp" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = CF338F712B3EA690003C2C01;
+			productRefGroup = CF338F7B2B3EA691003C2C01 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				CF338F792B3EA691003C2C01 /* CastleApp */,
+				CFE2B6652B3FCBD10045EB1D /* CastleAppTests */,
+				CFE2B6742B3FED1F0045EB1D /* CastleAppUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		CF338F782B3EA691003C2C01 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CF338F852B3EA691003C2C01 /* Preview Assets.xcassets in Resources */,
+				CF338F822B3EA691003C2C01 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CFE2B6642B3FCBD10045EB1D /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CFE2B6732B3FED1F0045EB1D /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		CF338F762B3EA691003C2C01 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CF338F802B3EA691003C2C01 /* CastleScreen.swift in Sources */,
+				CF6134292B3EFDED00FB5EE9 /* WarriorModel.swift in Sources */,
+				CF338F7E2B3EA691003C2C01 /* CastleAppApp.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CFE2B6622B3FCBD10045EB1D /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CFE2B6702B3FCBE00045EB1D /* WarriorModelTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CFE2B6712B3FED1F0045EB1D /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CFE2B6812B3FED3F0045EB1D /* CastleScreenTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		CFE2B66B2B3FCBD10045EB1D /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = CF338F792B3EA691003C2C01 /* CastleApp */;
+			targetProxy = CFE2B66A2B3FCBD10045EB1D /* PBXContainerItemProxy */;
+		};
+		CFE2B67C2B3FED1F0045EB1D /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = CF338F792B3EA691003C2C01 /* CastleApp */;
+			targetProxy = CFE2B67B2B3FED1F0045EB1D /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		CF338F862B3EA691003C2C01 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.2;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		CF338F872B3EA691003C2C01 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.2;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		CF338F892B3EA691003C2C01 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"CastleApp/Preview Content\"";
+				DEVELOPMENT_TEAM = 6H64278R9T;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 16.2;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = example.sample.CastleApp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		CF338F8A2B3EA691003C2C01 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"CastleApp/Preview Content\"";
+				DEVELOPMENT_TEAM = 6H64278R9T;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 16.2;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = example.sample.CastleApp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		CFE2B66D2B3FCBD10045EB1D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 6H64278R9T;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = example.sample.CastleAppTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/CastleApp.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/CastleApp";
+			};
+			name = Debug;
+		};
+		CFE2B66E2B3FCBD10045EB1D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 6H64278R9T;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = example.sample.CastleAppTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/CastleApp.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/CastleApp";
+			};
+			name = Release;
+		};
+		CFE2B67E2B3FED1F0045EB1D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 6H64278R9T;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = example.sample.CastleAppUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = CastleApp;
+			};
+			name = Debug;
+		};
+		CFE2B67F2B3FED1F0045EB1D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 6H64278R9T;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = example.sample.CastleAppUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = CastleApp;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		CF338F752B3EA690003C2C01 /* Build configuration list for PBXProject "CastleApp" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CF338F862B3EA691003C2C01 /* Debug */,
+				CF338F872B3EA691003C2C01 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		CF338F882B3EA691003C2C01 /* Build configuration list for PBXNativeTarget "CastleApp" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CF338F892B3EA691003C2C01 /* Debug */,
+				CF338F8A2B3EA691003C2C01 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		CFE2B66C2B3FCBD10045EB1D /* Build configuration list for PBXNativeTarget "CastleAppTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CFE2B66D2B3FCBD10045EB1D /* Debug */,
+				CFE2B66E2B3FCBD10045EB1D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		CFE2B67D2B3FED1F0045EB1D /* Build configuration list for PBXNativeTarget "CastleAppUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CFE2B67E2B3FED1F0045EB1D /* Debug */,
+				CFE2B67F2B3FED1F0045EB1D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = CF338F722B3EA690003C2C01 /* Project object */;
+}
