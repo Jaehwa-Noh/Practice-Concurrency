@@ -58,4 +58,23 @@ class WarriorModelTests: XCTestCase {
         
         XCTAssertEqual(1.0, warriorModel.whereAreYou)
     }
+    
+    func test_WarriorModel_CallAndPauseTwice_LocationUpdateEdge() async throws {
+        for count in 1...2 {
+            try await withThrowingTaskGroup(of: Void.self) { group in
+                group.addTask {
+                    try await self.warriorModel.moveToCastle()
+                }
+                group.addTask {
+                    try await Task.sleep(for: .seconds(1))
+                }
+                let _ = try await group.next()
+                group.cancelAll()
+            }
+            
+            let expectLocation = 15 * count
+            XCTAssertEqual(expectLocation, warriorModel.location)
+        }
+    }
 }
+
