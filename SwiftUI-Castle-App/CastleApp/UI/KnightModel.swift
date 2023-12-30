@@ -7,9 +7,11 @@
 
 import SwiftUI
 
-class Knight: ObservableObject {
+class Warrior: ObservableObject {
     @Published var location: Int
     var delayTime: Int
+    var name: String
+    var moveDistance: Int
     
     var whereAreYou: Double {
         let progressValue = Double(location) / 100
@@ -20,9 +22,11 @@ class Knight: ObservableObject {
         }
     }
     
-    init(delayTime: Int) {
+    init(delayTime: Int, name: String, moveDistance: Int) {
         self.location = 0
         self.delayTime = delayTime
+        self.name = name
+        self.moveDistance = moveDistance
     }
     
     func moveToCastle() async throws {
@@ -31,10 +35,9 @@ class Knight: ObservableObject {
             try Task.checkCancellation()
             try await Task.sleep(for: .milliseconds(delayTime))
             await MainActor.run {
-                location += 3
+                location += moveDistance
             }
         }
-        
     }
     
     func returnToHome() {
